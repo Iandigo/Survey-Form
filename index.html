@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sudent Survey Form</title>
+    <h1 id="title">Sudent Survey Form</h1>
+  </head>
+
+  <body>
+    <p id="description">Fill the detials below to complete the survey</p>
+
+    <form id="survey-form">
+      <div class="input-heading">
+        <label id="name-label"> Name </label>
+        <input
+          id="name"
+          placeholder="Ian Nguyen"
+          type="text"
+          name="name"
+          class="form-inputs"
+          required
+        />
+        <br />
+        <label id="email-label"> Email </lable>
+        <input
+          id="email"
+          placeholder="IanNguyen@gmail.com"
+          type="email"
+          name="email"
+          class="form-inputs"
+          required
+        />
+        <br />
+        <label id="number-label"> Age </label>
+        <input
+          id="number"
+          placeholder="18"
+          type="number"
+          name="number"
+          min="1"
+          max="100"
+          class="form-inputs"
+          required
+        />
+        <br />
+
+        <label id="role" style="width: 90vw">
+          Which option best describes your current study?
+        </label>
+        <br />
+        <select id="dropdown">
+          <option value="Diploma">Diploma</option>
+          <option value="Bachelor">Bachelor</option>
+          <option value="Master">Master</option>
+          <option value="PhD">PhD</option>
+          <option value="Other">Other</option>
+        </select>
+        <br />
+        <br />
+        <label id="gender-label">Gender</lable>
+        <br />
+        <input id="gender" type="radio" name="gender" value="male" />
+        <label for="gender"> Male </label>
+        <br />
+        <input id="gender" type="radio" name="gender" value="female" />
+        <label for="gender"> Female </label>
+        <br />
+        <input id="gender" type="radio" name="gender" value="other" />
+        <label for="gender"> Other </label>
+        <br />
+        <br />
+
+        <label id='new-facility-label'> Which facility you want us to add? </label>
+        <br />
+        <input id='checkbox' type='checkbox' name="new-facility" value='canteen'>
+        <label for="checkbox"> Canteen </label>
+        <br />
+        <input id='checkbox' type='checkbox' name="new-facility" value='carwash'>
+        <label for="checkbox"> Carwash </label>
+        <br />
+        <input id='checkbox' type='checkbox' name="new-facility" value='soccer-field'>
+        <label for="checkbox"> Soccer Field </label>
+        <br />
+        <input id='checkbox' type='checkbox' name="new-facility" value='tennis-field'>
+        <label for="checkbox"> Tennis Field </label>
+        <br />
+        <br/>
+        <label id="textarea"> Additional comments: </label>
+        <br />
+        <textarea id='textarea' name='comments' rows='5' cols="59.5"></textarea>
+        <br />
+
+        <input id='submit' type="submit" value="Submit" class="submit-button">
+      </div>
+    </form>
+  </body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
